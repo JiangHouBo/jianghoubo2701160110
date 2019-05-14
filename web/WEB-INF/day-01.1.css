@@ -1,0 +1,46 @@
+ #h1-d{
+        text-align: center;
+        margin-top: 110px;
+      }
+table{
+       position:relative;
+       right:20px;
+       margin:auto;
+       color:black;
+      }
+span{
+      font-size: 14px;
+     }
+#codespan{
+           font-size:20px;
+         }
+tr{
+    height:40px;
+    }
+#showdiv{
+          border:solid 1px dodgerblue;
+          border-radius:20px;
+          width:500px;
+          height:240px;
+          margin:auto;
+          margin-top:60px;
+          background-color:gray;
+       }
+body{
+      background-image: url(../img/bei1.jpg);
+      background-repeat:no-repeat;
+      background-size:cover;
+    }
+#cd{
+    position: relative;
+    left:90px;
+    color: black;
+    }
+    #cd:hover{
+    	color:burlywood;
+    }
+input[type=submit]{
+             	   position:relative;
+             	   left:173px;
+             	   width:120px;     	
+                  }

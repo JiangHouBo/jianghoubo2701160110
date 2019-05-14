@@ -1,0 +1,22 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 江厚波
+  Date: 2019/5/3
+  Time: 12:08
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录界面</title>
+</head>
+<frameset rows="15%,*">
+    <frame src="top.jsp" name="topFrame"/>
+    <frameset cols="16%,*">
+        <frame src="leftjhb.jsp" name="leftFrame"/>
+        <frame src="rightjhb.jsp" name="_tab"/>
+    </frameset>
+</frameset>
+</html>
