@@ -68,6 +68,7 @@
         #code{
             height:22px;
             margin-left:3px;
+            border-radius:10px;
         }
         input[type=submit]{
             position:relative;
@@ -114,9 +115,9 @@
             }
         }
         function checkPwd(){
-            var pwd=document.getElementById("pwd").value;
+            var pwd=document.getElementById("upwd").value;
             var span=document.getElementById("pwdspan");
-            var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
+            var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
             if(pwd==""||pwd==null){
                 span.innerHTML="密码不能为空";
                 span.style.color="red";
@@ -210,7 +211,7 @@
             </tr>
             <tr >
                 <td>
-                    <input type="text" name="code" id="code" value="" style="width:90px;" onblur="checkCode();" />&nbsp;&nbsp;&nbsp;&nbsp;<span id="codespan" style="background-image: url(img/yanzheng.jpg);" onclick="codeNum();"></span><br/><span id="spaned"></span>
+                    <input type="text" placeholder="验证码" name="code" id="code" value="" style="width:90px;" onblur="checkCode();" />&nbsp;&nbsp;&nbsp;&nbsp;<span id="codespan" style="background-image: url(img/yanzheng.jpg);" onclick="codeNum();"></span><br/><span id="spaned"></span>
                 </td>
             </tr>
             <tr>
