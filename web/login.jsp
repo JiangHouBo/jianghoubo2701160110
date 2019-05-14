@@ -40,7 +40,7 @@
             height:240px;
             margin:auto;
             margin-top:60px;
-            background-color:grey;
+            background-image: url(img/tartb.jpg);
         }
         body{
             background-image: url(img/denglu.jpg);
@@ -49,30 +49,45 @@
         }
         #cd{
             position: relative;
-            left:90px;
+            left:5px;
             color: black;
         }
         #cd:hover{
             color:burlywood;
         }
-        input[type=submit] {
-            position: relative;
-            left: 173px;
-            width: 80px;
-            font-size: 17px;
-            font-family: "微软雅黑";
-            font-weight: bold;
-            background-color: cornsilk;
+        #upwd{
+            height:25px;
+            width:300px;
+            border-radius:10px;
         }
-        input[type=button]{
+        #uname{
+            height:25px;
+            width:300px;
+            border-radius:10px;
+        }
+        #code{
+            height:22px;
+            margin-left:3px;
+        }
+        input[type=submit]{
             position:relative;
-            left:190px;
+            left:82px;
             width:80px;
             font-size:17px;
             font-family: "微软雅黑";
             font-weight: bold;
             background-color:cornsilk;
         }
+        input[type=button]{
+            position:relative;
+            left:95px;
+            width:80px;
+            font-size:17px;
+            font-family: "微软雅黑";
+            font-weight: bold;
+            background-color:cornsilk;
+        }
+
     </style>
    <script type="text/javascript">
         function codeNum(){
@@ -101,7 +116,7 @@
         function checkPwd(){
             var pwd=document.getElementById("pwd").value;
             var span=document.getElementById("pwdspan");
-            var reg=/^[a-z]\w{5,15}$/;
+            var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
             if(pwd==""||pwd==null){
                 span.innerHTML="密码不能为空";
                 span.style.color="red";
@@ -184,20 +199,16 @@
         <input type="hidden" name="oper" value="login"/>
         <table>
             <tr>
-                <td width="80px">用户名:</td>
                 <td width="200px">
-                    <input type="text" name="uname" id="uname" value="" onblur="unameSpan();"/><br/><span id="unamespan">*6-16位数字</span>
+                    <input type="text" placeholder="用户名" name="uname" id="uname" value="" onblur="unameSpan();"/><br/><span id="unamespan">*6-16位数字</span>
                 </td>
             </tr>
             <tr>
-                <td>密码:</td>
                 <td>
-                    <input type="password" name="upwd" id="upwd" value="" onblur="checkPwd();" /><br/><span id="pwdspan">*6-16位由字母和数字组成</span>
+                    <input type="password" placeholder="密码" name="upwd" id="upwd" value="" onblur="checkPwd();" /><br/><span id="pwdspan">*6-16位由字母和数字组成</span>
                 </td>
             </tr>
-
             <tr >
-                <td>验证码:</td>
                 <td>
                     <input type="text" name="code" id="code" value="" style="width:90px;" onblur="checkCode();" />&nbsp;&nbsp;&nbsp;&nbsp;<span id="codespan" style="background-image: url(img/yanzheng.jpg);" onclick="codeNum();"></span><br/><span id="spaned"></span>
                 </td>
