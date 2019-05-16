@@ -115,6 +115,13 @@
             position:relative;
             right:150px;
         }
+        input[type=button]{
+            position:relative;
+            left:80px;
+            width:90px;
+            height:30px;
+            bottom:30px;
+        }
     </style>
     <script type="text/javascript">
         function testCode(){
@@ -179,6 +186,7 @@
             <li><lable>出生年月:&nbsp;&nbsp;</lable><input type="text" name="ubirth" id="ubirth" value=""/></li>
             <li id="uli"><lable id="lab">验证码:&nbsp;&nbsp;</lable><input type="text" name="upss" id="upss" /></li><span id="spancode" style="background-image: url(../img/coderad.jpg);" onclick="testCode();"></span>
             <li><input type="submit" name="" id="sub" value="确定" onclick="return checkAll()"/></li>
+            <li><a href="/login.jsp"><input type="button" value="退出"/></a></li>
         </ul>
         </form>
     </div>
