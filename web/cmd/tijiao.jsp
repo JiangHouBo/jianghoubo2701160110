@@ -16,24 +16,34 @@
             list-style: none;
         }
         body{
-            background-color: cornsilk;
+            background-image:url(../img/tianyuan.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            text-align:center;
+            margin-top:70px;
+            margin-right:60px;
         }
         input[type=password]{
             width:300px;
             height: 25px;
         }
         #upwd1{
-            margin-top:36px;
+            position:relative;
+            top:30px;
+            right:36px;
         }
         #lab{
             margin-right:36px;
+            position:relative;
+            top:30px;
+            right:40px;
         }
         #centerdiv{
             margin-top:50px;
         }
         #newupwd{
             position: relative;
-            left:52.3px
+            left:80px;
         }
         #span{
             margin-left:40px;
@@ -42,14 +52,33 @@
             font-family: "微软雅黑";
         }#spaned{
              position: relative;
-             left:60px;
+             left:120px;
          }
+        #spaned:hover{
+            color:orangered;
+        }
+        #newid{
+            position:relative;
+            left:30px;
+        }
         input[type=submit]{
             position:relative;
-            top:40px;
-            left:100px;
-            width:150px;
-            height:30px;
+            top:56px;
+            right:84px;
+            width:110px;
+            height:35px;
+            color:antiquewhite;
+            font-weight: bold;
+            font-family:"微软雅黑";
+            font-size:16px;
+            background-color:orangered;
+        }
+        input[type=button]{
+            position:relative;
+            top:22px;
+            left:60px;
+            width:110px;
+            height:35px;
             color:antiquewhite;
             font-weight: bold;
             font-family:"微软雅黑";
@@ -104,14 +133,14 @@
 <body>
 <div>
     <span id="span">修改密码信息界面</span>
-    <hr/>
     <div id="centerdiv">
         <form action="/login.jsp" method="post" id="tj" target="_top">
             <input type="hidden" name="oper" value="pwd"/>
             <ul>
-                <li><label>新密码</label><input type="password" name="newupwd" id="newupwd" onblur="checkPwd();"/><span style="font-family: '微软雅黑';font-weight: bold;" id="spaned">由6-16位数字和字母组成</span></li>
+                <li><label id="newid">新密码</label><input type="password" name="newupwd" id="newupwd" onblur="checkPwd();"/><span style="font-family: '微软雅黑';font-weight: bold;" id="spaned">由6-16位数字和字母组成</span></li>
                 <li><lable id="lab">确认密码</lable><input type="password" name="upwd1" id="upwd1"/></li>
                 <li><input type="submit" name="" value="确认提交"/></li>
+                <li><a href="notpawd.jsp"><input type="button" value="返回"/></a></li>
             </ul>
         </form>
     </div>
