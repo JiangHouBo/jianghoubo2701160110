@@ -55,16 +55,18 @@
             var span=document.getElementById("spancode");
             span.innerHTML=code;
         }
-        function  testCheckNum() {
-            var ntext=document.getElementById("utext").value;
-            var yhspan=document.getElementById("yjspan");
-            if(ntext==""||ntext==null){
-                yhspan.innerHTML="手机号不能为空";
-                yhspan.style.color="red";
-                return false;
+        function testPhone(){
+            var utext=document.getElementById("utext").value;
+            var span=document.getElementById("showspan");
+            var reg=/^1\d{10}$/;
+            if(utext==""||utext==null){
+                span.innerHTML="手机号不能为空";
+                span.style.colot="red";
+            }else if(reg.test(utext)){
+                span.innerHTML="";
             }else{
-                yhspan.innerHTML="";
-                return true;
+                span.innerHTML="密码格式不正确";
+                span.style.color="goldenrod";
             }
         }
         function testAll(){
@@ -77,7 +79,7 @@
 <div id="showd">
     <form action="tijiao.jsp" method="post">
     <ul id="cul">
-        <li><lable>手机号:</lable><input type="text" name="utext" id="utext" onblur="testCheckNum();"/></li><span id="yjspan"></span>
+        <li><lable>手机号:</lable><input type="text" name="utext" id="utext" onblur="testPhone();"/></li><span id="showspan"></span>
         <li id="uli"><lable>验证码:</lable><input type="text" name="upss" id="upss" /></li><span id="spancode" style="background-image: url(../img/coderad.jpg);" onclick="testCode();"></span>
         <li><input type="submit" name="" id="sub" value="确定" onclick="return testAll();"/></li>
     </ul>
