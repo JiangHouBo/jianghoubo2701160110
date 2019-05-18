@@ -34,9 +34,9 @@
         }
         #sub{
             position:relative;
-            right:57px;
-            top:20px;
-            width:140px;
+            right:76px;
+            top:16px;
+            width:100px;
             height:30px;
         }
         #uli{
@@ -62,11 +62,14 @@
             if(upss==""||upss==null){
                 spaned.innerHTML="验证码不能为空";
                 spaned.style.color="red";
+                return false;
             }else if(upss==span.innerHTML){
                 spaned.innerHTML="";
+                return true;
             }else{
                 spaned.innerHTML="验证码错误";
                 spaned.style.color="goldenrod";
+                return false;
             }
         }
         function testPhone(){
@@ -76,11 +79,14 @@
             if(utext==""||utext==null){
                 span.innerHTML="手机号不能为空";
                 span.style.colot="red";
+                return false;
             }else if(reg.test(utext)){
                 span.innerHTML="";
+                return true;
             }else{
                 span.innerHTML="密码格式不正确";
                 span.style.color="goldenrod";
+                return false;
             }
         }
         function testAll(){
