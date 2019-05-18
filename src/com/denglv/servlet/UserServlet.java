@@ -73,7 +73,6 @@ public class UserServlet extends HttpServlet {
             resp.sendRedirect("login.jsp");
         }
     }
-
     //显示所有用户信息
     private void userShow(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //调用service
