@@ -172,6 +172,7 @@ public class UserDaoImpl implements UserDao {
         //返回结果
         return l;
     }
+
 //用户注册
     @Override
     public int userRegistDao(User u) {
