@@ -89,6 +89,10 @@
             bottom:30px;
             font-size: 20px;
         }
+        #pwdspan{
+            position:relative;
+            bottom:20px;
+        }
         #sdiv{
             margin-left:390px;
             border: solid 1px cornflowerblue;
@@ -99,11 +103,6 @@
             background-size:cover;
         }
         #yspan{
-            margin-left:410px;
-            position: relative;
-            bottom:26px;
-        }
-        #pwdspan{
             margin-left:410px;
             position: relative;
             bottom:26px;
@@ -149,7 +148,7 @@
         function  testNum() {
             var num=document.getElementById("upwd").value;
             var pwd=document.getElementById("pwdspan");
-            var reg=/^[a-z]\w{5,15}$/;
+            var reg=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,16}$/;
             if(num==""||num==null){
                 pwd.innerHTML="密码不能为空";
                 pwd.style.color="red";
@@ -180,7 +179,7 @@
             <li><lable>&nbsp;&nbsp;&nbsp;&nbsp;ID:</lable><input type="text" name="uid" id="uid" value="" /></li>
             <li><lable>&nbsp;&nbsp;姓名:</lable><input type="text" name="name" id="name" /></li>
             <li><lable>&nbsp;用户名:</lable><input type="text" name="uname" id="uname" onblur="testCheck();"/></li><span id="yspan">*6-16位数字</span>
-            <li><lable>&nbsp;&nbsp;密码:</lable><input type="password" name="upwd" id="upwd" onblur="testNum();"/></li><span id="pwdspan">*6-16位数字</span>
+            <li><lable>&nbsp;&nbsp;密码:</lable><input type="password" name="upwd" id="upwd" onblur="testNum();"/></li><br/><span id="pwdspan">*由6-16位数字和字母组成</span>
             <li><lable id="sex">&nbsp;&nbsp;性别:</lable> <span id="sexed"> <label>男<input type="radio" name="usex"  value="1" checked="checked"/></label> &nbsp;&nbsp; <label>女<input type="radio" name="usex" value="0"/></label></span></li>
             <li><lable>&nbsp;&nbsp;年龄:</lable><input type="text" name="uage" id="uage" value=""/></li>
             <li><lable>出生年月:&nbsp;&nbsp;</lable><input type="text" name="ubirth" id="ubirth" value=""/></li>
