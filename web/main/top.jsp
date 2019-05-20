@@ -53,7 +53,7 @@
     <h2><i>用户登录界面</i></h2>
 </div>
 <div class="rightdiv">
-    <span><b>欢迎 <%=((User)session.getAttribute("user")).getName()%> 登录</b></span>
+    <span><b>欢迎 <%=((User)session.getAttribute("user")).getUname()%> 登录</b></span>
     <a href="javascript:void(0)" id="uout">退出</a>
 </div>
 </body>
