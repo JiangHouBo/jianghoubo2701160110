@@ -42,12 +42,12 @@ public class UserServlet extends HttpServlet {
             userShow(req,resp);
         }else if("regist".equals(oper)) {
             //调用注册
-           /* userRegist(req,resp);*/
+            userRegist(req,resp);
         }else {
             logger.debug("找不到:"+oper);
         }
     }
- /* //用户注册
+  //用户注册
     private void userRegist(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         //获取请求信息
         int uid=req.getParameter("uid")!=""?Integer.parseInt(req.getParameter("uid")):0;
@@ -62,7 +62,7 @@ public class UserServlet extends HttpServlet {
         User u=new User(uid,name,uname,upwd,usex,uage,ubirth);
         //处理请求信息
            //调用业务层处理用户信息
-        int cd=us.userRegistService(u);
+       int cd=us.userRegistService(u);
         System.out.println(cd);
         //响应处理结果
         if(cd>0){
@@ -72,7 +72,7 @@ public class UserServlet extends HttpServlet {
             //重定向
             resp.sendRedirect("login.jsp");
         }
-    }*/
+    }
     //显示所有用户信息
     private void userShow(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //调用service

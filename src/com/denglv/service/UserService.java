@@ -15,6 +15,6 @@ public interface UserService {
     int usePwdService(String newpwd, int uid);
 //获取所有的用户信息
     List<User> userShowService();
-/*//用户注册
-    int userRegistService(User u);*/
+//用户注册
+    int userRegistService(User u);
 }
