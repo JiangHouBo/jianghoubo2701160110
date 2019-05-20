@@ -34,6 +34,9 @@
             position:relative;
             left:10px;
         }
+        b:hover{
+            color:cornflowerblue;
+        }
     </style>
     <script type="text/javascript" src="jquery-3.4.0.js"></script>
     <script type="text/javascript">
@@ -53,7 +56,7 @@
     <h2><i>用户登录界面</i></h2>
 </div>
 <div class="rightdiv">
-    <span><b>欢迎 <%=((User)session.getAttribute("user")).getUname()%> 登录</b></span>
+    <span><b>欢迎 <%=((User)session.getAttribute("user")).getName()%> 登录</b></span>
     <a href="javascript:void(0)" id="uout">退出</a>
 </div>
 </body>
