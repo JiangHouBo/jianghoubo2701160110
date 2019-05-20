@@ -15,6 +15,6 @@ public interface UserDao {
     List<User> userShowDao();
 
 //用户注册
-    int userRegistDao(User u);
+    int usercheckRegistDao(User u);
 
 }

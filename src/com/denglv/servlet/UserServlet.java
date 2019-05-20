@@ -62,7 +62,7 @@ public class UserServlet extends HttpServlet {
         User u=new User(uid,name,uname,upwd,usex,uage,ubirth);
         //处理请求信息
            //调用业务层处理用户信息
-       int cd=us.userRegistService(u);
+       int cd=us.usercheckRegistService(u);
         System.out.println(cd);
         //响应处理结果
         if(cd>0){

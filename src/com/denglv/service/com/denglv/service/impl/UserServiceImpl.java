@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService {
     }
 //用户注册
     @Override
-    public int userRegistService(User u) {
-        return ud.userRegistDao(u);
+    public int usercheckRegistService(User u) {
+        return ud.usercheckRegistDao(u);
     }
 }

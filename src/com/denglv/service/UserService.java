@@ -16,5 +16,5 @@ public interface UserService {
 //获取所有的用户信息
     List<User> userShowService();
 //用户注册
-    int userRegistService(User u);
+    int usercheckRegistService(User u);
 }

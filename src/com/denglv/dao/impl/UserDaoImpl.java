@@ -174,7 +174,7 @@ public class UserDaoImpl implements UserDao {
     }
     //用户注册
     @Override
-    public int userRegistDao(User u) {
+    public int usercheckRegistDao(User u) {
         //声明jdbc对象
         Connection conn=null;
         PreparedStatement ps=null;
