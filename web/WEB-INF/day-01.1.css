@@ -39,6 +39,11 @@ body{
     #cd:hover{
     	color:burlywood;
     }
+#code{
+    height:22px;
+    margin-left:3px;
+    border-radius:10px;
+}
 input[type=submit]{
     position:relative;
     left:82px;
