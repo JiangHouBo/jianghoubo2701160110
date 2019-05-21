@@ -53,3 +53,9 @@ input[type=submit]{
     font-weight: bold;
     background-color:cornsilk;
 }
+input[type=button]{
+    position:relative;
+    left:95px;
+    width:80px;
+    font-size:17px;
+}
