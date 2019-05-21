@@ -18,19 +18,19 @@ tr{
     height:40px;
     }
 #showdiv{
-          border:solid 1px dodgerblue;
-          border-radius:20px;
-          width:500px;
-          height:240px;
-          margin:auto;
-          margin-top:60px;
-          background-color:gray;
-       }
+    border:solid 1px dodgerblue;
+    border-radius:20px;
+    width:500px;
+    height:240px;
+    margin:auto;
+    margin-top:60px;
+    background-image: url(../img/tartb.jpg);
+}
 body{
-      background-image: url(../img/bei1.jpg);
-      background-repeat:no-repeat;
-      background-size:cover;
-    }
+    background-image: url(../img/denglu.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 #cd{
     position: relative;
     left:90px;
@@ -40,7 +40,11 @@ body{
     	color:burlywood;
     }
 input[type=submit]{
-             	   position:relative;
-             	   left:173px;
-             	   width:120px;     	
-                  }
+    position:relative;
+    left:82px;
+    width:80px;
+    font-size:17px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    background-color:cornsilk;
+}
