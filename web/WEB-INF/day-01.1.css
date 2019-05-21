@@ -1,6 +1,6 @@
- #h1-d{
-        text-align: center;
-        margin-top: 110px;
+#h1-d{
+       text-align: center;
+       margin-top: 110px;
       }
 table{
        position:relative;
@@ -10,7 +10,7 @@ table{
       }
 span{
       font-size: 14px;
-     }
+    }
 #codespan{
     font-size:16px;
     font-weight:bold;
@@ -18,7 +18,7 @@ span{
 }
 tr{
     height:40px;
-    }
+  }
 #showdiv{
     border:solid 1px dodgerblue;
     border-radius:20px;
@@ -37,10 +37,10 @@ body{
     position: relative;
     left:90px;
     color: black;
-    }
-    #cd:hover{
-    	color:burlywood;
-    }
+   }
+#cd:hover{
+    color:burlywood;
+   }
 #uname{
     height:25px;
     width:300px;
