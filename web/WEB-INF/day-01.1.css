@@ -39,6 +39,11 @@ body{
     #cd:hover{
     	color:burlywood;
     }
+#uname{
+    height:25px;
+    width:300px;
+    border-radius:10px;
+}
 #code{
     height:22px;
     margin-left:3px;
