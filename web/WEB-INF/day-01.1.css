@@ -54,11 +54,11 @@ input[type=submit]{
     background-color:cornsilk;
 }
 input[type=button]{
-    position:relative;
-    left:95px;
-    width:80px;
-    font-size:17px;
- font-family: "微软雅黑";
-    font-weight: bold;
-    background-color:cornsilk;
+     position:relative;
+     left:95px;
+     width:80px;
+     font-size:17px;
+     font-family: "微软雅黑";
+     font-weight: bold;
+     background-color:cornsilk;
 }
